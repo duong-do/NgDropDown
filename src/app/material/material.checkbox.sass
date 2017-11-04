@@ -1,0 +1,38 @@
+.material_checkbox
+  position: relative
+  margin: 25px
+  &:focus
+    outline-color: #fff
+  &:before
+    border: 2px solid #ccc
+    content: ""
+    cursor: pointer
+    display: block
+    height: 15px
+    position: absolute
+    -moz-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    -webkit-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    width: 15px
+    z-index: 1
+  &:checked:before
+    border-top-style: none
+    border-right-style: none
+    height: 10px
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+  &:after
+    background: #fff
+    content: ""
+    display: block
+    height: 15px
+    position: absolute
+    top: 0
+    width: 15px
+    z-index: 0
+  &:checked:before
+    border-color: #4285F4

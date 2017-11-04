@@ -1,14 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { SimpleDropdownComponent } from './simple-dropdown/simple-dropdown.component';
+import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimpleDropdownComponent,
+    ButtonDropdownComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MDBBootstrapModule.forRoot(),
+    FormsModule,
+    CommonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

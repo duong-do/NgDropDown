@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SimpleDropdownComponent } from './simple-dropdown/simple-dropdown.component';
 import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.component';
+import { ImageDropdownComponent } from './image-dropdown/image-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleDropdownComponent,
-    ButtonDropdownComponent
+    ButtonDropdownComponent,
+    ImageDropdownComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-simpledropdown',
+  selector: 'app-simple-dropdown',
   templateUrl: './simple-dropdown.component.html',
   styleUrls: ['./simple-dropdown.component.sass']
 })

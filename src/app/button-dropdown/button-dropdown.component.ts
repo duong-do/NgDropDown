@@ -7,10 +7,13 @@ import { isUndefined } from 'util';
   styleUrls: ['./button-dropdown.component.sass']
 })
 export class ButtonDropdownComponent implements OnInit {
-
+  selected = 'Select language';
   constructor() { }
 
   ngOnInit() {
   }
 
+  public setLanguage(language: string): void {
+    this.selected = language;
+  }
 }

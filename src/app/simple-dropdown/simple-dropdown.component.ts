@@ -15,7 +15,7 @@ export class SimpleDropdownComponent {
 
   constructor() { }
 
-  public onChangedLanguague(): void {
+  public onChangedLanguague(event): void {
 
   }
 
